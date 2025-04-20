@@ -183,7 +183,7 @@ function generateMockRecipe(prompt: string): Partial<Recipe> {
 export const generateRecipeImageURL = (recipeName: string): string => {
   const encodedRecipeName = encodeURIComponent(recipeName);
   // return `https://source.unsplash.com/400x300/?food,${encodedRecipeName}`;
-  return "recipe_Alchmemy/public/pl.png";
+  return "pl.png";
 
 };
 
@@ -196,6 +196,6 @@ export const getRandomPlaceholderImage = (): string => {
   const randomType = imageTypes[Math.floor(Math.random() * imageTypes.length)];
   const randomId = Math.floor(Math.random() * 100);
   // return `https://source.unsplash.com/400x300/?${randomType},${randomId}`;
-  return "recipe_Alchmemy/public/pl.png";
+  return "pl.png";
 
 };
